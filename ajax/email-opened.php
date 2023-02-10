@@ -158,7 +158,7 @@
 	$(".table-wrap [rel=tooltip]").tooltip();
 
 	$(".replythis").click(function(){
-		loadURL("http://localhost:7777/git-smart-ci/ajax/email-reply.php", $('#inbox-content > .table-wrap'));
+		loadURL("http://localhost:7777/git-codeIgniter-3.1.13/ajax/email-reply.php", $('#inbox-content > .table-wrap'));
 	})
 	
 </script>

@@ -198,7 +198,7 @@
 									</li>
 									<li class="divider"></li>
 									<li>
-										<a href="profile.php" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
+										<a href="<?php echo APP_URL; ?>/appviews/views_profile" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
 									</li>
 									<li class="divider"></li>
 									<li>
@@ -210,7 +210,7 @@
 									</li>
 									<li class="divider"></li>
 									<li>
-										<a href="login.php" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+										<a href="<?php echo APP_URL; ?>/miscellaneous/misc_login" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
 									</li>
 								</ul>
 							</li>
@@ -218,7 +218,7 @@
 
 						<!-- logout button -->
 						<div id="logout" class="btn-header transparent pull-right">
-							<span> <a href="<?php echo APP_URL; ?>/login.php" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+							<span> <a href="<?php echo APP_URL; ?>/miscellaneous/misc_login" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
 						</div>
 						<!-- end logout button -->
 
@@ -229,7 +229,7 @@
 						<!-- end search mobile button -->
 
 						<!-- input: search field -->
-						<form action="<?php echo APP_URL; ?>/search.php" class="header-search pull-right">
+						<form action="<?php echo APP_URL; ?>/appviews/views_search" class="header-search pull-right">
 							<input type="text" name="param" placeholder="Find reports and more" id="search-fld">
 							<button type="submit">
 								<i class="fa fa-search"></i>
@@ -320,22 +320,22 @@
 				<div id="shortcut">
 					<ul>
 						<li>
-							<a href="<?php echo APP_URL; ?>/inbox.php" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-envelope fa-4x"></i> <span>Mail <span class="label pull-right bg-color-darken">14</span></span> </span> </a>
+							<a href="<?php echo APP_URL; ?>/inbox/inbox" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-envelope fa-4x"></i> <span>Mail <span class="label pull-right bg-color-darken">14</span></span> </span> </a>
 						</li>
 						<li>
-							<a href="<?php echo APP_URL; ?>/calendar.php" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-calendar fa-4x"></i> <span>Calendar</span> </span> </a>
+							<a href="<?php echo APP_URL; ?>/cool/cool_calendar" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-calendar fa-4x"></i> <span>Calendar</span> </span> </a>
 						</li>
 						<li>
-							<a href="<?php echo APP_URL; ?>/gmap-xml.php" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
+							<a href="<?php echo APP_URL; ?>/cool/cool_gmap_xml" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
 						</li>
 						<li>
-							<a href="<?php echo APP_URL; ?>/invoice.php" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
+							<a href="<?php echo APP_URL; ?>/miscellaneous/misc_invoice" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
 						</li>
 						<li>
-							<a href="<?php echo APP_URL; ?>/gallery.php" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
+							<a href="<?php echo APP_URL; ?>/appviews/views_gallery" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
 						</li>
 						<li>
-							<a href="<?php echo APP_URL; ?>/profile.php" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>My Profile </span> </span> </a>
+							<a href="<?php echo APP_URL; ?>/appviews/views_profile" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>My Profile </span> </span> </a>
 						</li>
 					</ul>
 				</div>

@@ -924,7 +924,7 @@
 	})
 	function getMail($this) {
 		//console.log($this.closest("tr").attr("id"));
-		loadURL("http://localhost:7777/git-smart-ci/ajax/email-opened.php", $('#inbox-content > .table-wrap'));
+		loadURL("http://localhost:7777/git-codeIgniter-3.1.13/ajax/email-opened.php", $('#inbox-content > .table-wrap'));
 	}
 
 
