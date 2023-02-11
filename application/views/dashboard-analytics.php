@@ -32,7 +32,9 @@ include("inc/nav.php");
 	<div id="content">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-				<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-home"></i> Dashboard <span>> Dashobard Analytics</span></h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
 			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
 				<ul id="sparks" class="">
@@ -56,7 +58,7 @@ include("inc/nav.php");
 					</li>
 				</ul>
 			</div>
-		</div>
+		</div>		
 		<!-- widget grid -->
 		<section id="widget-grid" class="">
 			<!-- row -->
@@ -333,28 +335,28 @@ include("inc/nav.php");
 									<div class="chat-list-body custom-scroll">
 										<ul id="chat-users">
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/5.png" alt="">Robin Berry <span class="badge badge-inverse">23</span><span class="state"><i class="fa fa-circle txt-color-green pull-right"></i></span></a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/5.png" alt="">Robin Berry <span class="badge badge-inverse">23</span><span class="state"><i class="fa fa-circle txt-color-green pull-right"></i></span></a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/male.png" alt="">Mark Zeukartech <span class="state"><i class="last-online pull-right">2hrs</i></span></a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/male.png" alt="">Mark Zeukartech <span class="state"><i class="last-online pull-right">2hrs</i></span></a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/male.png" alt="">Belmain Dolson <span class="state"><i class="last-online pull-right">45m</i></span></a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/male.png" alt="">Belmain Dolson <span class="state"><i class="last-online pull-right">45m</i></span></a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/male.png" alt="">Galvitch Drewbery <span class="state"><i class="fa fa-circle txt-color-green pull-right"></i></span></a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/male.png" alt="">Galvitch Drewbery <span class="state"><i class="fa fa-circle txt-color-green pull-right"></i></span></a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/male.png" alt="">Sadi Orlaf <span class="state"><i class="fa fa-circle txt-color-green pull-right"></i></span></a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/male.png" alt="">Sadi Orlaf <span class="state"><i class="fa fa-circle txt-color-green pull-right"></i></span></a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/male.png" alt="">Markus <span class="state"><i class="last-online pull-right">2m</i></span> </a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/male.png" alt="">Markus <span class="state"><i class="last-online pull-right">2m</i></span> </a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/sunny.png" alt="">Sunny <span class="state"><i class="last-online pull-right">2m</i></span> </a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/sunny.png" alt="">Sunny <span class="state"><i class="last-online pull-right">2m</i></span> </a>
 											</li>
 											<li>
-												<a href="javascript:void(0);"><img src="img/avatars/male.png" alt="">Denmark <span class="state"><i class="last-online pull-right">2m</i></span> </a>
+												<a href="javascript:void(0);"><img src="<?php echo ASSETS_URL; ?>/img/avatars/male.png" alt="">Denmark <span class="state"><i class="last-online pull-right">2m</i></span> </a>
 											</li>
 										</ul>
 									</div>
@@ -374,7 +376,7 @@ include("inc/nav.php");
 								<div id="chat-body" class="chat-body custom-scroll">
 									<ul>
 										<li class="message">
-											<img src="img/avatars/5.png" class="online" alt="">
+											<img src="<?php echo ASSETS_URL; ?>/img/avatars/5.png" class="online" alt="">
 											<div class="message-text">
 												<time>
 													2014-01-13
@@ -389,7 +391,7 @@ include("inc/nav.php");
 												</p> </div>
 										</li>
 										<li class="message">
-											<img src="img/avatars/sunny.png" class="online" alt="">
+											<img src="<?php echo ASSETS_URL; ?>/img/avatars/sunny.png" class="online" alt="">
 											<div class="message-text">
 												<time>
 													2014-01-13

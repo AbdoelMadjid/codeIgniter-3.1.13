@@ -6,6 +6,8 @@ require_once("inc/config.ui.php");
 /*---------------- PHP Custom Scripts ---------
 YOU CAN SET CONFIGURATION VARIABLES HERE BEFORE IT GOES TO NAV, RIBBON, ETC.
 E.G. $page_title = "Custom Title" */
+$IconMain="home";
+$page_title_main="Dashboard";
 $page_title = "Social Wall";
 /* ---------------- END PHP Custom Scripts ------------- */
 //include header
@@ -31,12 +33,11 @@ include("inc/nav.php");
 	<div id="content">
 		<!-- row -->
 		<div class="row">
-			<!-- col -->
 			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-				<h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-home"></i> Dashboard <span>>
-					Social Wall </span></h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
-			<!-- end col -->
 		</div>
 		<!-- end row -->
 		<!--

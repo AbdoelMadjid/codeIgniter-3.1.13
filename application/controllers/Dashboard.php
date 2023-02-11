@@ -7,12 +7,18 @@ class Dashboard extends CI_Controller {
 	}
   
 	public function dashboard_analytics(){
-		$this->load->view('dashboard-analytics');
+		$data['IconMain']   = "home";
+        $data['page_title_main'] = "Dashboard";
+		$this->load->view('dashboard-analytics',$data);
 	}
 	public function dashboard_marketing(){
-		$this->load->view('dashboard-marketing');
+		$data['IconMain']   = "home";
+        $data['page_title_main'] = "Dashboard";
+		$this->load->view('dashboard-marketing',$data);
 	}	
 	public function dashboard_social(){
+		$data['IconMain']   = "home";
+        $data['page_title_main'] = "Dashboard";
 		$this->load->view('dashboard-social');
 	}		
 }
