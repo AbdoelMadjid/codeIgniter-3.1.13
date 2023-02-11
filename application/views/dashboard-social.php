@@ -33,7 +33,7 @@ include("inc/nav.php");
 	<div id="content">
 		<!-- row -->
 		<div class="row">
-			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<?php
 				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
 				?>

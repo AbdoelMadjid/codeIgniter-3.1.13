@@ -11,7 +11,9 @@ class Smartint extends CI_Controller {
 		$this->load->view('smartint-skins');
 	}	
 	public function smartint_applayout(){
-		$this->load->view('smartint-applayout');
+		$data['IconMain']   = "cube";
+        $data['page_title_main'] = "SmartAdmin Intel";
+		$this->load->view('smartint-applayout',$data);
 	}
 	public function smartint_difver(){
 		$this->load->view('smartint-difver');

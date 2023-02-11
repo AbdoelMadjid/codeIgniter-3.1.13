@@ -5,12 +5,18 @@ class Tables extends CI_Controller {
 		parent::__construct();
 	}
 	public function table_normal(){
-		$this->load->view('table-normal');
+		$data['IconMain']   = "table";
+        $data['page_title_main'] = "Tables";
+		$this->load->view('table-normal',$data);
 	}
 	public function table_datatables(){
-		$this->load->view('table-datatables');
+		$data['IconMain']   = "table";
+        $data['page_title_main'] = "Tables";
+		$this->load->view('table-datatables',$data);
 	}
 	public function table_jqgrid(){
-		$this->load->view('table-jqgrid');
+		$data['IconMain']   = "table";
+        $data['page_title_main'] = "Tables";
+		$this->load->view('table-jqgrid',$data);
 	}
 }

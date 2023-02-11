@@ -19,296 +19,291 @@ $page_nav["graphs"]["sub"]["chartjs"]["active"] = true;
 include("inc/nav.php");
 ?>
 <!-- ==========================CONTENT STARTS HERE ========================== -->
-		<!-- MAIN PANEL -->
-		<div id="main" role="main">
-			<?php
-				//configure ribbon (breadcrumbs) array("name"=>"url"), leave url empty if no url
-				//$breadcrumbs["New Crumb"] => "http://url.com"
-				$breadcrumbs[$page_nav["graphs"]["title"]] = "";
-				include("inc/ribbon.php");
-			?>
-			<!-- MAIN CONTENT -->
-			<div id="content">
-				<!-- row -->
-				<div class="row">
-					<!-- col -->
-					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-						<h1 class="page-title txt-color-blueDark">
-							<!-- PAGE HEADER -->
-							<i class="fa fa-fw fa-bar-chart-o"></i> 
-								Graph 
-							<span>>  
-								Chart.js
-							</span>
-						</h1>
-					</div>
-					<!-- end col -->
-					<!-- right side of the page with the sparkline graphs -->
-					<!-- col -->
-					<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
-						<!-- sparks -->
-						<ul id="sparks">
-							<li class="sparks-info">
-								<h5> My Income <span class="txt-color-blue">$47,171</span></h5>
-								<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
-									1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
-								</div>
-							</li>
-							<li class="sparks-info">
-								<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
-								<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
-									110,150,300,130,400,240,220,310,220,300, 270, 210
-								</div>
-							</li>
-							<li class="sparks-info">
-								<h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
-								<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
-									110,150,300,130,400,240,220,310,220,300, 270, 210
-								</div>
-							</li>
-						</ul>
-						<!-- end sparks -->
-					</div>
-					<!-- end col -->
-				</div>
-				<!-- end row -->
-				<!--
-					The ID "widget-grid" will start to initialize all widgets below 
-					You do not need to use widgets if you dont want to. Simply remove 
-					the <section></section> and you can use wells or panels instead 
-					-->
-				<!-- widget grid -->
-				<section id="widget-grid" class="">
-					<!-- row -->
-					<div class="row">
-						<!-- NEW WIDGET START -->
-						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-									data-widget-colorbutton="false"	
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true" 
-									data-widget-sortable="false"
-								-->
-								<header>
-									<h2>Line Chart </h2>				
-								</header>
-								<!-- widget div-->
-								<div>
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-										<input class="form-control" type="text">	
-									</div>
-									<!-- end widget edit box -->
-									<!-- widget content -->
-									<div class="widget-body">
-										<!-- this is what the user will see -->
-										<canvas id="lineChart" height="120"></canvas>
-									</div>
-									<!-- end widget content -->
-								</div>
-								<!-- end widget div -->
-							</div>
-							<!-- end widget -->
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-									data-widget-colorbutton="false"	
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true" 
-									data-widget-sortable="false"
-								-->
-								<header>
-									<h2>Radar Chart </h2>				
-								</header>
-								<!-- widget div-->
-								<div>
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-										<input class="form-control" type="text">	
-									</div>
-									<!-- end widget edit box -->
-									<!-- widget content -->
-									<div class="widget-body">
-										<!-- this is what the user will see -->
-										<canvas id="radarChart" height="120"></canvas>
-									</div>
-									<!-- end widget content -->
-								</div>
-								<!-- end widget div -->
-							</div>
-							<!-- end widget -->
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget" id="wid-id-3" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-									data-widget-colorbutton="false"	
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true" 
-									data-widget-sortable="false"
-								-->
-								<header>
-									<h2>Polar Chart </h2>				
-								</header>
-								<!-- widget div-->
-								<div>
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-										<input class="form-control" type="text">	
-									</div>
-									<!-- end widget edit box -->
-									<!-- widget content -->
-									<div class="widget-body">
-										<!-- this is what the user will see -->
-										<canvas id="polarChart" height="120"></canvas>
-									</div>
-									<!-- end widget content -->
-								</div>
-								<!-- end widget div -->
-							</div>
-							<!-- end widget -->
-						</article>
-						<!-- WIDGET END -->
-						<!-- NEW WIDGET START -->
-						<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget" id="wid-id-2" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-									data-widget-colorbutton="false"	
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true" 
-									data-widget-sortable="false"
-								-->
-								<header>
-									<h2>Bar Chart </h2>				
-								</header>
-								<!-- widget div-->
-								<div>
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-										<input class="form-control" type="text">	
-									</div>
-									<!-- end widget edit box -->
-									<!-- widget content -->
-									<div class="widget-body">
-										<!-- this is what the user will see -->
-										<canvas id="barChart" height="120"></canvas>
-									</div>
-									<!-- end widget content -->
-								</div>
-								<!-- end widget div -->
-							</div>
-							<!-- end widget -->
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget" id="wid-id-4" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-									data-widget-colorbutton="false"	
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true" 
-									data-widget-sortable="false"
-								-->
-								<header>
-									<h2>Doughnut Chart </h2>				
-								</header>
-								<!-- widget div-->
-								<div>
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-										<input class="form-control" type="text">	
-									</div>
-									<!-- end widget edit box -->
-									<!-- widget content -->
-									<div class="widget-body">
-										<!-- this is what the user will see -->
-										<canvas id="doughnutChart" height="120"></canvas>
-									</div>
-									<!-- end widget content -->
-								</div>
-								<!-- end widget div -->
-							</div>
-							<!-- end widget -->
-							<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget" id="wid-id-6" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-									data-widget-colorbutton="false"	
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true" 
-									data-widget-sortable="false"
-								-->
-								<header>
-									<h2>Pie Chart </h2>				
-								</header>
-								<!-- widget div-->
-								<div>
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
-										<input class="form-control" type="text">	
-									</div>
-									<!-- end widget edit box -->
-									<!-- widget content -->
-									<div class="widget-body">
-										<!-- this is what the user will see -->
-										<canvas id="pieChart" height="120"></canvas>
-									</div>
-									<!-- end widget content -->
-								</div>
-								<!-- end widget div -->
-							</div>
-							<!-- end widget -->
-						</article>
-						<!-- WIDGET END -->
-					</div>
-					<!-- end row -->
-					<!-- row -->
-					<div class="row">
-						<!-- a blank row to get started -->
-						<div class="col-sm-12">
-							<!-- your contents here -->
-						</div>
-					</div>
-					<!-- end row -->
-				</section>
-				<!-- end widget grid -->
+<!-- MAIN PANEL -->
+<div id="main" role="main">
+	<?php
+		//configure ribbon (breadcrumbs) array("name"=>"url"), leave url empty if no url
+		//$breadcrumbs["New Crumb"] => "http://url.com"
+		$breadcrumbs[$page_nav["graphs"]["title"]] = "";
+		include("inc/ribbon.php");
+	?>
+	<!-- MAIN CONTENT -->
+	<div id="content">
+		<!-- row -->
+		<div class="row">
+			<!-- col -->
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
-			<!-- END MAIN CONTENT -->
+			<!-- end col -->
+			<!-- right side of the page with the sparkline graphs -->
+			<!-- col -->
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+				<!-- sparks -->
+				<ul id="sparks">
+					<li class="sparks-info">
+						<h5> My Income <span class="txt-color-blue">$47,171</span></h5>
+						<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+							1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+						<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+					<li class="sparks-info">
+						<h5> Site Orders <span class="txt-color-greenDark"><i class="fa fa-shopping-cart"></i>&nbsp;2447</span></h5>
+						<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+							110,150,300,130,400,240,220,310,220,300, 270, 210
+						</div>
+					</li>
+				</ul>
+				<!-- end sparks -->
+			</div>
+			<!-- end col -->
 		</div>
-		<!-- END MAIN PANEL -->
+		<!-- end row -->
+		<!--
+			The ID "widget-grid" will start to initialize all widgets below 
+			You do not need to use widgets if you dont want to. Simply remove 
+			the <section></section> and you can use wells or panels instead 
+			-->
+		<!-- widget grid -->
+		<section id="widget-grid" class="">
+			<!-- row -->
+			<div class="row">
+				<!-- NEW WIDGET START -->
+				<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+						-->
+						<header>
+							<h2>Line Chart </h2>				
+						</header>
+						<!-- widget div-->
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+								<input class="form-control" type="text">	
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body">
+								<!-- this is what the user will see -->
+								<canvas id="lineChart" height="120"></canvas>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+					</div>
+					<!-- end widget -->
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+						-->
+						<header>
+							<h2>Radar Chart </h2>				
+						</header>
+						<!-- widget div-->
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+								<input class="form-control" type="text">	
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body">
+								<!-- this is what the user will see -->
+								<canvas id="radarChart" height="120"></canvas>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+					</div>
+					<!-- end widget -->
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget" id="wid-id-3" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+						-->
+						<header>
+							<h2>Polar Chart </h2>				
+						</header>
+						<!-- widget div-->
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+								<input class="form-control" type="text">	
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body">
+								<!-- this is what the user will see -->
+								<canvas id="polarChart" height="120"></canvas>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+					</div>
+					<!-- end widget -->
+				</article>
+				<!-- WIDGET END -->
+				<!-- NEW WIDGET START -->
+				<article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget" id="wid-id-2" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+						-->
+						<header>
+							<h2>Bar Chart </h2>				
+						</header>
+						<!-- widget div-->
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+								<input class="form-control" type="text">	
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body">
+								<!-- this is what the user will see -->
+								<canvas id="barChart" height="120"></canvas>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+					</div>
+					<!-- end widget -->
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget" id="wid-id-4" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+						-->
+						<header>
+							<h2>Doughnut Chart </h2>				
+						</header>
+						<!-- widget div-->
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+								<input class="form-control" type="text">	
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body">
+								<!-- this is what the user will see -->
+								<canvas id="doughnutChart" height="120"></canvas>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+					</div>
+					<!-- end widget -->
+					<!-- Widget ID (each widget will need unique ID)-->
+					<div class="jarviswidget" id="wid-id-6" data-widget-colorbutton="false" data-widget-fullscreenbutton="false" data-widget-editbutton="false" data-widget-sortable="false">
+						<!-- widget options:
+							usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+							data-widget-colorbutton="false"	
+							data-widget-editbutton="false"
+							data-widget-togglebutton="false"
+							data-widget-deletebutton="false"
+							data-widget-fullscreenbutton="false"
+							data-widget-custombutton="false"
+							data-widget-collapsed="true" 
+							data-widget-sortable="false"
+						-->
+						<header>
+							<h2>Pie Chart </h2>				
+						</header>
+						<!-- widget div-->
+						<div>
+							<!-- widget edit box -->
+							<div class="jarviswidget-editbox">
+								<!-- This area used as dropdown edit box -->
+								<input class="form-control" type="text">	
+							</div>
+							<!-- end widget edit box -->
+							<!-- widget content -->
+							<div class="widget-body">
+								<!-- this is what the user will see -->
+								<canvas id="pieChart" height="120"></canvas>
+							</div>
+							<!-- end widget content -->
+						</div>
+						<!-- end widget div -->
+					</div>
+					<!-- end widget -->
+				</article>
+				<!-- WIDGET END -->
+			</div>
+			<!-- end row -->
+			<!-- row -->
+			<div class="row">
+				<!-- a blank row to get started -->
+				<div class="col-sm-12">
+					<!-- your contents here -->
+				</div>
+			</div>
+			<!-- end row -->
+		</section>
+		<!-- end widget grid -->
+	</div>
+	<!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN PANEL -->
 <!-- ==========================CONTENT ENDS HERE ========================== -->
 <!-- PAGE FOOTER -->
 <?php

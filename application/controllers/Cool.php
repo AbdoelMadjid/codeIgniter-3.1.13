@@ -7,9 +7,13 @@ class Cool extends CI_Controller {
 	}
   
 	public function cool_calendar(){
-		$this->load->view('cool-calendar');
+		$data['IconMain']   = "calendar";
+        $data['page_title_main'] = "Cool Features!";
+		$this->load->view('cool-calendar', $data);
 	}
 	public function cool_gmap_xml(){
-		$this->load->view('cool-gmap-xml');
+		$data['IconMain']   = "map-marker";
+        $data['page_title_main'] = "Cool Features!";
+		$this->load->view('cool-gmap-xml', $data);
 	}	
 }

@@ -5,33 +5,53 @@ class Elements extends CI_Controller {
 		parent::__construct();
 	}
 	public function ui_general_elements(){
-		$this->load->view('ui-general-elements');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-general-elements',$data);
 	}
 	public function ui_buttons(){
-		$this->load->view('ui-buttons');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-buttons',$data);
 	}
 	public function ui_icon_fa(){
-		$this->load->view('ui-icon-fa');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-icon-fa',$data);
 	}
 	public function ui_icon_glyph(){
-		$this->load->view('ui-icon-glyph');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-icon-glyph',$data);
 	}
 	public function ui_icon_flags(){
-		$this->load->view('ui-icon-flags');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-icon-flags',$data);
 	}	
 	public function ui_grid(){
-		$this->load->view('ui-grid');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-grid',$data);
 	}
 	public function ui_treeview(){
-		$this->load->view('ui-treeview');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-treeview',$data);
 	}
 	public function ui_nestable_list(){
-		$this->load->view('ui-nestable-list');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-nestable-list',$data);
 	}
 	public function ui_jqui(){
-		$this->load->view('ui-jqui');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-jqui',$data);
 	}	
 	public function ui_typography(){
-		$this->load->view('ui-typography');
+		$data['IconMain']   = "desktop";
+        $data['page_title_main'] = "UI Elements";
+		$this->load->view('ui-typography',$data);
 	}						
 }

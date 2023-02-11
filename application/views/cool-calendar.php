@@ -6,7 +6,7 @@ require_once("inc/config.ui.php");
 /*---------------- PHP Custom Scripts ---------
 YOU CAN SET CONFIGURATION VARIABLES HERE BEFORE IT GOES TO NAV, RIBBON, ETC.
 E.G. $page_title = "Custom Title" */
-$page_title = "3 Calendar";
+$page_title = "Add Event 3 Calendar";
 /* ---------------- END PHP Custom Scripts ------------- */
 //include header
 //you can add your custom css in $page_css array.
@@ -31,12 +31,9 @@ include("inc/nav.php");
 	<div id="content">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-				<h1 class="page-title txt-color-blueDark"><i class="fa fa-calendar fa-fw "></i> 
-					Calendar
-					<span>>
-					Add events
-					</span>
-				</h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
 			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
 				<ul id="sparks" class="">

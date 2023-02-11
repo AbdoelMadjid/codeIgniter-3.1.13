@@ -5,24 +5,38 @@ class Graphs extends CI_Controller {
 		parent::__construct();
 	}
 	public function graph_flot(){
-		$this->load->view('graph-flot');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-flot',$data);
 	}
 	public function graph_morris(){
-		$this->load->view('graph-morris');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-morris',$data);
 	}
 	public function graph_sparkline_charts(){
-		$this->load->view('graph-sparkline-charts');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-sparkline-charts',$data);
 	}
 	public function graph_easypie_charts(){
-		$this->load->view('graph-easypie-charts');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-easypie-charts',$data);
 	}
 	public function graph_dygraphs(){
-		$this->load->view('graph-dygraphs');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-dygraphs',$data);
 	}
 	public function graph_chartjs(){
-		$this->load->view('graph-chartjs');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-chartjs',$data);
 	}
 	public function graph_hchartable(){
-		$this->load->view('graph-hchartable');
+		$data['IconMain']   = "bar-chart-o";
+        $data['page_title_main'] = "Graph";
+		$this->load->view('graph-hchartable',$data);
 	}
 }

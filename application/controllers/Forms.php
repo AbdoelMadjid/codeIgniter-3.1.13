@@ -5,33 +5,53 @@ class Forms extends CI_Controller {
 		parent::__construct();
 	}
 	public function form_elements(){
-		$this->load->view('form-elements');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";
+		$this->load->view('form-elements',$data);
 	}
 	public function form_layout(){
-		$this->load->view('form-layout');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-layout',$data);
 	}
 	public function form_validation(){
-		$this->load->view('form-validation');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-validation',$data);
 	}
 	public function form_bootstrap_forms(){
-		$this->load->view('form-bootstrap-forms');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-bootstrap-forms',$data);
 	}
 	public function form_plugins(){
-		$this->load->view('form-plugins');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-plugins',$data);
 	}
 	public function form_wizard(){
-		$this->load->view('form-wizard');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-wizard',$data);
 	}
 	public function form_other_editors(){
-		$this->load->view('form-other-editors');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-other-editors',$data);
 	}
 	public function form_dropzone(){
-		$this->load->view('form-dropzone');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-dropzone',$data);
 	}	
 	public function form_image_editor(){
-		$this->load->view('form-image-editor');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-image-editor',$data);
 	}	
 	public function form_ckeditor(){
-		$this->load->view('form-ckeditor');
+		$data['IconMain']   = "edit";
+        $data['page_title_main'] = "Form";		
+		$this->load->view('form-ckeditor',$data);
 	}							
 }

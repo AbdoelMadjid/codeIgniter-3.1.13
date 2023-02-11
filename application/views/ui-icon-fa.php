@@ -32,12 +32,9 @@ include("inc/nav.php");
 	<div id="content">
 		<div class="row">
 			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-				<h1 class="page-title txt-color-blueDark"><i class="fa fa-desktop fa-fw "></i> 
-					UI Elements 
-					<span>>
-					 Icons > Font Awesome
-					</span>
-				</h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i> Icons <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
 			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
 				<ul id="sparks" class="">

@@ -31,14 +31,9 @@ include("inc/nav.php");
 	<div id="content">
 		<div class="row">
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-				<h1 class="page-title txt-color-blueDark">
-					<!-- PAGE HEADER -->
-					<i class="fa-fw fa fa-pencil-square-o"></i> 
-						Forms
-					<span>>  
-						Form Layouts
-					</span>
-				</h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<!-- Button trigger modal -->
