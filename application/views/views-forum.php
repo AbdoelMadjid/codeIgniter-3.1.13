@@ -6,7 +6,7 @@ require_once("inc/config.ui.php");
 /*---------------- PHP Custom Scripts ---------
 YOU CAN SET CONFIGURATION VARIABLES HERE BEFORE IT GOES TO NAV, RIBBON, ETC.
 E.G. $page_title = "Custom Title" */
-$page_title = "Forum";
+$page_title = "Forum Layout";
 /* ---------------- END PHP Custom Scripts ------------- */
 //include header
 //you can add your custom css in $page_css array.
@@ -34,8 +34,9 @@ include("inc/nav.php");
 		<div class="row">
 			<!-- col -->
 			<div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-				<h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-file-o"></i> Other Pages <span>>
-					Forum Layout </span></h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
 			<!-- end col -->
 			<!-- right side of the page with the sparkline graphs -->

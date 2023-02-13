@@ -199,7 +199,7 @@ $page_nav = array(
                     ),
                     "glyph" => array(
                         "title" => "Glyph Icons",
-                        "icon" => "fa-plane",
+                        "icon" => "fa-file-word-o",
                         "url" => APP_URL."/elements/ui_icon_glyph"
                     ),
                     "flags" => array(
@@ -354,7 +354,7 @@ $page_nav = array(
 			),
 			"profile" => array(
 				"title" => "Profile",
-				"icon" => "fa fa-group",
+				"icon" => "fa fa-user-circle-o",
 				"url" => APP_URL."/appviews/views_profile"
 			),
 			"timeline" => array(

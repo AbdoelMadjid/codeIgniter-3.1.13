@@ -19,6 +19,6 @@ class Dashboard extends CI_Controller {
 	public function dashboard_social(){
 		$data['IconMain']   = "home";
         $data['page_title_main'] = "Dashboard";
-		$this->load->view('dashboard-social');
+		$this->load->view('dashboard-social',$data);
 	}		
 }

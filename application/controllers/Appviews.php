@@ -7,30 +7,48 @@ class Appviews extends CI_Controller {
 	}
   
 	public function views_projects(){
-		$this->load->view('views-projects');
+		$data['IconMain']   = "file-text-o";
+        $data['page_title_main'] = "App Views";
+		$this->load->view('views-projects',$data);
 	}
 	public function views_blog(){
-		$this->load->view('views-blog');
+		$data['IconMain']   = "paragraph";
+        $data['page_title_main'] = "App Views";		
+		$this->load->view('views-blog',$data);
 	}
 	public function views_gallery(){
-		$this->load->view('views-gallery');
+		$data['IconMain']   = "picture-o";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-gallery',$data);
 	}
 	public function views_forum(){
-		$this->load->view('views-forum');
+		$data['IconMain']   = "comments";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-forum',$data);
 	}
 	public function views_forum_topic(){
-		$this->load->view('views-forum-topic');
+		$data['IconMain']   = "comments";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-forum-topic',$data);
 	}
 	public function views_forum_post(){
-		$this->load->view('views-forum-post');
+		$data['IconMain']   = "comments";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-forum-post',$data);
 	}
 	public function views_profile(){
-		$this->load->view('views-profile');
+		$data['IconMain']   = "user-circle-o";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-profile',$data);
 	}
 	public function views_timeline(){
-		$this->load->view('views-timeline');
+		$data['IconMain']   = "clock-o";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-timeline',$data);
 	}
 	public function views_search(){
-		$this->load->view('views-search');
+		$data['IconMain']   = "search";
+        $data['page_title_main'] = "App Views";	
+		$this->load->view('views-search',$data);
 	}
 }

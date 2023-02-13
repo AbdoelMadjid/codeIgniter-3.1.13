@@ -6,6 +6,8 @@ class Widget extends CI_Controller {
 		parent::__construct();
 	}
 	public function widgets(){
-		$this->load->view('widgets');
+		$data['IconMain']   = "list-alt";
+        $data['page_title_main'] = "Widgets";
+		$this->load->view('widgets',$data);
 	}
 }

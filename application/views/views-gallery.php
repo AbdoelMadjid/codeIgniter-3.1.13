@@ -31,10 +31,9 @@ include("inc/nav.php");
 	<div id="content">
 		<div class="row hidden-mobile">
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<h1 class="page-title txt-color-blueDark">
-					<i class="fa-fw fa fa-picture-o"></i> 
-					Gallery <span>>
-					Smart Responsive gallery </span></h1>
+				<?php
+				echo '<h1 class="page-title txt-color-blueDark"><i class="fa-fw fa fa-'.$IconMain.'"></i>'.$page_title_main.'<span> <i class="fa-fw fa fa-angle-double-right"></i>'.$page_title.'</span></h1>';
+				?>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-align-right">
 				<div class="page-title">

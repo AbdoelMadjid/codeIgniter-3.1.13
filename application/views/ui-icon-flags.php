@@ -108,7 +108,7 @@ include("inc/nav.php");
 							<div class="widget-body">
 								<div class="alert alert-info">
 										<i class="fa fa-exclamation"></i> Please note: flag images has a base class for image <code>
-											flag flag-*</code>. A full example of this in use will be as follows: <code> img class="flag flag-us" src="<?php echo ASSETS_URL; ?>/img/blank.gif"</code>
+											flag flag-*</code>. A full example of this in use will be as follows: <code> img class="flag flag-us" src="/img/blank.gif"</code>
 									</div>
 						<h2>Africa</h2>
 						<div class="row">

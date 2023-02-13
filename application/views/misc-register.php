@@ -37,8 +37,8 @@ include("inc/header.php");
 							<div class="pull-left login-desc-box-l">
 								<h4 class="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin, everywhere you go!</h4>
 								<div class="login-app-icons">
-									<a href="javascript:void(0);" class="btn btn-danger btn-sm">Frontend Template</a>
-									<a href="javascript:void(0);" class="btn btn-danger btn-sm">Find out more</a>
+									<a href="<?php echo ASSETS_URL; ?>/smartint/smartint_layouts" class="btn btn-danger btn-sm">Frontend Template</a>
+									<a href="<?php echo ASSETS_URL; ?>/dashboard/dashboard_analytics" class="btn btn-danger btn-sm">Find out more</a>
 								</div>
 							</div>
 							<img src="<?php echo ASSETS_URL; ?>/img/demo/iphoneview.png" alt="" class="pull-right display-image" style="width:210px">

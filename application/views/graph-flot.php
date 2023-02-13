@@ -6,7 +6,7 @@ require_once("inc/config.ui.php");
 /*---------------- PHP Custom Scripts ---------
 YOU CAN SET CONFIGURATION VARIABLES HERE BEFORE IT GOES TO NAV, RIBBON, ETC.
 E.G. $page_title = "Custom Title" */
-$page_title = "Flot Graphs";
+$page_title = "Flot Chart";
 /* ---------------- END PHP Custom Scripts ------------- */
 //include header
 //you can add your custom css in $page_css array.
