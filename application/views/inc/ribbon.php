@@ -27,6 +27,9 @@
 		<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
 		<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
 		</span> -->
-
+		<span class="ribbon-button-alignment pull-right hidden-xs">
+			<span class="txt-color-white"><script src="<?php echo ASSETS_URL; ?>/js/tanggal.js"></script> M / </span> &nbsp;
+			<!-- <span id="demo" class="txt-color-white"></span> &nbsp;&nbsp;&nbsp;<span class="text-primary"><em><strong>Versi App</strong></em></span>-->
+		</span>
 	</div>
 	<!-- END RIBBON -->
