@@ -366,7 +366,7 @@ $page_nav = array(
 				"title" => "Search Page",
 				"icon" => "fa fa-search",
 				"url" => APP_URL."/appviews/views_search"
-			),
+			)			
 		)
 	),
 	"ecommerce" => array(
@@ -430,6 +430,11 @@ $page_nav = array(
 			"blank" => array(
 				"title" => "Blank Page",
 				"url" => APP_URL."/miscellaneous/misc_blank_"
+			),
+			"comingsoon" => array(
+				"title" => "Coming Soon",
+				"icon" => "fa fa-clock-o",
+				"url" => APP_URL."/miscellaneous/misc_coming_soon"
 			)
 		)
 	),

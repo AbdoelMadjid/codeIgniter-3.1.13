@@ -38,5 +38,8 @@ class Miscellaneous extends CI_Controller {
 	}
 	public function misc_chat(){
 		$this->load->view('misc-chat');
-	}					
+	}
+	public function misc_coming_soon(){
+		$this->load->view('misc-coming-soon');
+	}						
 }
